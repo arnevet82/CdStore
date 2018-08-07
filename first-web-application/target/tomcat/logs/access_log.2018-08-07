@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:33:42 +0300] "GET /client.do?email=adam@gmail.com HTTP/1.1" 200 1092 http-bio-8080-exec-1 1332
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:36:06 +0300] "GET / HTTP/1.1" 200 923 http-bio-8080-exec-3 18
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:36:08 +0300] "GET /adminLogin.do HTTP/1.1" 200 348 http-bio-8080-exec-6 8
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:36:10 +0300] "POST /adminLogin.do HTTP/1.1" 302 - http-bio-8080-exec-7 1
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:36:10 +0300] "GET /store.do HTTP/1.1" 200 4451 http-bio-8080-exec-8 138
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:37:02 +0300] "GET /store.do HTTP/1.1" 200 4451 http-bio-8080-exec-9 8
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:37:04 +0300] "GET /cd.do?firstName=Admin HTTP/1.1" 200 2058 http-bio-8080-exec-10 126
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:37:12 +0300] "GET / HTTP/1.1" 200 923 http-bio-8080-exec-10 3
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:37:14 +0300] "GET /clientLogin.do HTTP/1.1" 200 479 http-bio-8080-exec-10 11
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:37:34 +0300] "POST /clientLogin.do HTTP/1.1" 302 - http-bio-8080-exec-10 18
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:37:34 +0300] "GET /cd.do HTTP/1.1" 200 2105 http-bio-8080-exec-10 4
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:37:37 +0300] "GET /buy-cd.do?id=15397466&email=niza@gmail.com HTTP/1.1" 302 - http-bio-8080-exec-10 32
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:37:37 +0300] "GET /cd.do HTTP/1.1" 200 2145 http-bio-8080-exec-10 9
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:37:38 +0300] "GET /buy-cd.do?id=56930261&email=niza@gmail.com HTTP/1.1" 302 - http-bio-8080-exec-10 6
+0:0:0:0:0:0:0:1 - - [07/Aug/2018:10:37:38 +0300] "GET /cd.do HTTP/1.1" 200 2191 http-bio-8080-exec-10 4
