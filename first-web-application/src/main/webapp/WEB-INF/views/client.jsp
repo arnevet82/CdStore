@@ -38,7 +38,10 @@
 		<br>
 		<h5>Password: ${client.password}</h5>
 		<br>
-		<h5>Purchases: ${client.cds}</h5>
+		<h5>Purchases: </h5><br>
+			<c:forEach items="${client.cds}" var="cd">
+				<li>${cd.name};&nbsp;&nbsp;${cd.price}$</li>
+			</c:forEach>
 		<p>
 			<font color="red">${errorMessage}</font>
 		</p>

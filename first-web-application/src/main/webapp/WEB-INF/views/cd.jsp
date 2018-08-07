@@ -46,7 +46,7 @@
 		    <c:forEach items="${cds}" var="cd" varStatus="status">
 		        <tr>
 		            <td>${cd.name}&nbsp;&nbsp;&nbsp;</td>
-		            <td>${cd.price}&nbsp;&nbsp;&nbsp;</td>
+		            <td>${cd.price}$&nbsp;&nbsp;&nbsp;</td>
 		            <td><a href="/buy-cd.do?id=${cd.id}&email=${email}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Buy</a></td>
 		        </tr>
 		        
@@ -60,7 +60,7 @@
 		<h4>You bought:</h4>
 		<ol>
 			<c:forEach items="${currentlyBoughtCds}" var="cd">
-				<li>${cd.name};&nbsp;&nbsp;${cd.price}</li>
+				<li>${cd.name};&nbsp;&nbsp;${cd.price}$</li>
 			</c:forEach>
 		</ol>
 		

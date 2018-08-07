@@ -52,7 +52,7 @@
 		        <tr>
 		            <td>${cd.id}&nbsp;&nbsp;&nbsp;</td>
 		            <td>${cd.name}&nbsp;&nbsp;&nbsp;</td>
-		            <td>${cd.price}&nbsp;&nbsp;&nbsp;</td>
+		            <td>${cd.price}$&nbsp;&nbsp;&nbsp;</td>
 		            <td>${cd.amount}&nbsp;&nbsp;&nbsp;</td>
 		            <td><a href="/delete-cd.do?id=${cd.id}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Delete</a></td>
 		        </tr>
