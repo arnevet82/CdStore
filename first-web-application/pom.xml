@@ -33,6 +33,24 @@
 			<artifactId>mongo-java-driver</artifactId>
 			<version>3.8.0</version>
 		</dependency>
+		
+		<dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet</artifactId>
+            <version>2.26-b03</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-server</artifactId>
+            <version>2.26-b03</version>
+        </dependency>
+       
+        <dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-xjc</artifactId>
+    <version>2.1.6</version>
+</dependency>
+        
 	</dependencies>
 
 	<build>

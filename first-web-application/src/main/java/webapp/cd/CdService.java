@@ -4,9 +4,12 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 import org.bson.Document;
 
 import com.mongodb.BasicDBObject;
+import com.mongodb.Cursor;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
@@ -17,26 +20,41 @@ import com.mongodb.client.MongoDatabase;
 
 import webapp.client.ClientService;
 
+@XmlRootElement
 public class CdService {
 	
 	MongoClient mongoClient = new MongoClient("localhost", 27017);
 	DB db = mongoClient.getDB("local");
 	DBCollection cdsCollection = db.getCollection("cds");
 	DBCollection soldCollection = db.getCollection("sold_cds");
-	
+	Cursor cursor = cdsCollection.find();
 	MongoDatabase database = mongoClient.getDatabase("local");
 	MongoCollection<Document> col = database.getCollection("cds");
-//	ClientService clientService = new ClientService();
 	
 	static List<Cd>currentlyBought = new ArrayList<Cd>();
 	static {
 	}
 	
-	
 	public List<DBObject> retrieveCds(){
 		
 		List<DBObject> all = cdsCollection.find().toArray();
 		return all;
+	}
+	
+	public List<Cd> retrieveAllCds(){
+		
+		List<DBObject> all = cdsCollection.find().toArray();
+		List<Cd> allCds = new ArrayList<Cd>();
+
+		for (DBObject dbObj: all) {
+			String name = (String) dbObj.get("name");
+			double price = (double) dbObj.get("price");
+			int amount = (int) dbObj.get("amount");
+			allCds.add(new Cd(name, price, amount, 0));
+		}
+		
+		System.out.println("All Cds: " + allCds.size() + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+		return allCds;
 	}
 	
 	public List<DBObject> retrieveSoldCds(){

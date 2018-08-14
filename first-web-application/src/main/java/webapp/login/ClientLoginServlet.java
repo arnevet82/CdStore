@@ -8,11 +8,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.Path;
 
 import webapp.client.Client;
 import webapp.client.ClientService;
 import webapp.cd.CdService;
-
 
 @WebServlet(urlPatterns = "/clientLogin.do")
 public class ClientLoginServlet extends HttpServlet {	
@@ -40,7 +40,8 @@ public class ClientLoginServlet extends HttpServlet {
 		client.setLastName(lastName);
 		client.setPassword(password);
 		clientService.addClient(client);
-		response.sendRedirect("/cd.do");
+//		response.sendRedirect("/cd.do");
+		response.sendRedirect("/rest/restCd.do");
 			
 		
 	}

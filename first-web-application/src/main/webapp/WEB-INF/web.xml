@@ -17,5 +17,6 @@
 	<welcome-file-list>
 		<welcome-file>welcome.do</welcome-file>
 	</welcome-file-list>
+	
 
 </web-app>

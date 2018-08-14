@@ -8,12 +8,19 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.Response;
+
 import webapp.cd.CdService;
 
 @WebServlet(urlPatterns = "/cd.do")
 public class CdServlet extends HttpServlet {	
 	
 	private CdService cdService = new CdService();
+	
 
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,5 +42,6 @@ public class CdServlet extends HttpServlet {
 		response.sendRedirect("/cd.do");
 	
 	}
+	
 	
 }

@@ -1,8 +1,10 @@
+C:\Users\Admin\git\CdStore\first-web-application\src\main\java\webapp\conf\ApplicationConfig.java
 C:\Users\Admin\git\CdStore\first-web-application\src\main\java\webapp\login\ClientLoginServlet.java
 C:\Users\Admin\git\CdStore\first-web-application\src\main\java\webapp\cd\CdServlet.java
 C:\Users\Admin\git\CdStore\first-web-application\src\main\java\webapp\cd\InventoryServlet.java
 C:\Users\Admin\git\CdStore\first-web-application\src\main\java\webapp\cd\Cd.java
 C:\Users\Admin\git\CdStore\first-web-application\src\main\java\webapp\cd\CdService.java
+C:\Users\Admin\git\CdStore\first-web-application\src\main\java\webapp\cd\CdRest.java
 C:\Users\Admin\git\CdStore\first-web-application\src\main\java\webapp\login\WelcomeServlet.java
 C:\Users\Admin\git\CdStore\first-web-application\src\main\java\webapp\client\ClientServlet.java
 C:\Users\Admin\git\CdStore\first-web-application\src\main\java\webapp\cd\buyCdServlet.java

@@ -1,5 +1,8 @@
 package webapp.cd;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class Cd {
 	private String name;
 	private double price;
